@@ -14,8 +14,6 @@
 */
 package application.service;
 
-
-
 import java.util.ArrayList;
 import application.dto.InitialInvestmentDto;
 import application.dto.InvestmentYieldDto;
@@ -25,7 +23,7 @@ import java.awt.List;
  * The Interface CompoundInterestCalculator.
  */
 public interface CompoundInterestCalculator {
-
+  
   /**
    * Creates the revenue grid.
    *
@@ -41,7 +39,4 @@ public interface CompoundInterestCalculator {
    * @return true, if successful
    */
   boolean validateInput(InitialInvestmentDto initialInvestment);
-
-
-
 }
