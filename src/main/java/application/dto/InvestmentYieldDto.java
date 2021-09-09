@@ -48,5 +48,13 @@ public class InvestmentYieldDto {
   /** The final balance. */
   private double finalBalance;
 
+  @Override
+  public String toString() {
+    return "InvestmentYieldDto [investmentYear=" + investmentYear + ", initialInvestment="
+        + initialInvestment + ", yearlyInput=" + yearlyInput + ", investmentYield="
+        + investmentYield + ", finalBalance=" + finalBalance + "]";
+  }
+
+  
 
 }

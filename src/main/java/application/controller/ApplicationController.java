@@ -37,10 +37,10 @@ public class ApplicationController {
     
     InvestmentYieldDto userInvesYiel1 = new InvestmentYieldDto();
     
-    userInvesYiel1.setInvestmentYear(3);
-    userInvesYiel1.setInitialInvestment(1200.0);
-    userInvesYiel1.setYearlyInput(0);
-    userInvesYiel1.setInvestmentYear(0);
+    userInvesYiel1.setInvestmentYear(5);
+    userInvesYiel1.setInitialInvestment(5000.0);
+    userInvesYiel1.setYearlyInput(3000.0);
+    userInvesYiel1.setInvestmentYear(5);
     userInvesYiel1.setFinalBalance(0);
     
         

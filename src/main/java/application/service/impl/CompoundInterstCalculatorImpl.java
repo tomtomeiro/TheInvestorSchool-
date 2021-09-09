@@ -23,7 +23,16 @@ import application.service.CompoundInterestCalculator;
  * The Class CompoundInterstCalculatorImpl.
  */
 public class CompoundInterstCalculatorImpl implements CompoundInterestCalculator {
-
+  
+  /** The input. */
+  private double input;
+  
+  /** The performance. */
+  private double performance;
+  
+  /** The final balence. */
+  private double finalBalence;
+  
 
   /**
    * Creates the revenue grid.
@@ -33,6 +42,7 @@ public class CompoundInterstCalculatorImpl implements CompoundInterestCalculator
    */
   @Override
   public ArrayList<InvestmentYieldDto> createRevenueGrid(InitialInvestmentDto initialInvestment) {
+    ArrayList<InvestmentYieldDto> userInvestmentYiel = new ArrayList();
     
     return null;
   }
@@ -45,8 +55,12 @@ public class CompoundInterstCalculatorImpl implements CompoundInterestCalculator
    */
   @Override
   public boolean validateInput(InitialInvestmentDto initialInvestment) {
-    
+    InvestmentYieldDto userInvesYiel1 = new InvestmentYieldDto();
+    input= userInvesYiel1.getInitialInvestment()*(1+userInvesYiel1.getYearlyInput()/100);
     return false;
   }
+  
+  
+  
 
 }
