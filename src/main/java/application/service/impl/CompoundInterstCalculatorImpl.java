@@ -33,6 +33,7 @@ public class CompoundInterstCalculatorImpl implements CompoundInterestCalculator
    */
   @Override
   public ArrayList<InvestmentYieldDto> createRevenueGrid(InitialInvestmentDto initialInvestment) {
+    
     return null;
   }
 
@@ -44,6 +45,7 @@ public class CompoundInterstCalculatorImpl implements CompoundInterestCalculator
    */
   @Override
   public boolean validateInput(InitialInvestmentDto initialInvestment) {
+    
     return false;
   }
 

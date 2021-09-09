@@ -34,7 +34,7 @@ import lombok.Setter;
 public class InvestmentYieldDto {
 
   /** The investment year. */
-  private Integer investmentYear;
+  private int investmentYear;
   
   /** The initial investment. */
   private double initialInvestment;

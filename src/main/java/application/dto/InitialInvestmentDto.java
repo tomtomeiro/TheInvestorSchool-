@@ -47,4 +47,19 @@ public class InitialInvestmentDto {
   /** The investment years. */
   private Integer investmentYears;
 
+  /**
+   * To string.
+   *
+   * @return the string
+   */
+  @Override
+  public String toString() {
+    return "InitialInvestmentDto [initialinvestment=" + initialinvestment + ", yearlyinput="
+        + yearlyinput + ", yearlyInputIncrement=" + yearlyInputIncrement + ", investmentYield="
+        + investmentYield + ", investmentYears=" + investmentYears + "]";
+  }
+  
+  
+  
+
 }
