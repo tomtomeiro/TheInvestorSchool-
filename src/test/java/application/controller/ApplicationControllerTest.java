@@ -46,18 +46,26 @@ public class ApplicationControllerTest {
     this.initialInvestment.setYearlyInput(Double.valueOf(3000.0));
     this.initialInvestment.setYearlyInputIncrement(Integer.valueOf(1));
     this.initialInvestment.setInvestmentYears(5);
-    this.initialInvestment.setInvestmentYield(Float.valueOf(0.21f));
+    this.initialInvestment.setInvestmentYield(Float.valueOf(21));
 
   }
 
   /**
-   * Should generate table yield.
+   * Should generate table yield.  
    */
   @Test
   public void shouldGenerateTableYield() {
     List<InvestmentYieldDto> tableYield = controller.createTableYield(initialInvestment);
     assertEquals(5, tableYield.size());
-  }
+    
+    InvestmentYieldDto firstYear = tableYield.get(0);
+    assertEquals(5000.00, firstYear.getInitialInvestment());
+    assertEquals(3000.00, firstYear.getYearlyInput());
+    assertEquals(1680.00, firstYear.getInvestmentYear());
+    assertEquals(9680.00, firstYear.getFinalBalance());
+    
+    
+  }  
 
 
 }

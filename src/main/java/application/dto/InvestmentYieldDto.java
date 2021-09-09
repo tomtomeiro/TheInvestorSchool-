@@ -15,6 +15,7 @@
 
 package application.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -31,6 +32,7 @@ import lombok.Setter;
  * @param finalBalance the new final balance
  */
 @Setter
+@AllArgsConstructor
 public class InvestmentYieldDto {
 
   /** The investment year. */
