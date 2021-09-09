@@ -43,7 +43,7 @@ public class ApplicationControllerTest {
     this.initialInvestment = new InitialInvestmentDto();
 
     this.initialInvestment.setInitialinvestment(Double.valueOf(5000.0));
-    this.initialInvestment.setYearlyinput(Double.valueOf(3000.0));
+    this.initialInvestment.setYearlyInput(Double.valueOf(3000.0));
     this.initialInvestment.setYearlyInputIncrement(Integer.valueOf(1));
     this.initialInvestment.setInvestmentYears(5);
     this.initialInvestment.setInvestmentYield(Float.valueOf(0.21f));

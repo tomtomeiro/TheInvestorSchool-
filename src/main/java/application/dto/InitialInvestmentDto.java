@@ -36,7 +36,7 @@ public class InitialInvestmentDto {
   private double initialinvestment;
   
   /** The yearlyinput. */
-  private double yearlyinput;
+  private double yearlyInput;
   
   /** The yearly input increment. */
   private Integer yearlyInputIncrement;
@@ -55,7 +55,7 @@ public class InitialInvestmentDto {
   @Override
   public String toString() {
     return "InitialInvestmentDto [initialinvestment=" + initialinvestment + ", yearlyinput="
-        + yearlyinput + ", yearlyInputIncrement=" + yearlyInputIncrement + ", investmentYield="
+        + yearlyInput + ", yearlyInputIncrement=" + yearlyInputIncrement + ", investmentYield="
         + investmentYield + ", investmentYears=" + investmentYears + "]";
   }
   

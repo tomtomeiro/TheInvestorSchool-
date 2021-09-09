@@ -44,9 +44,30 @@ public class CompoundInterstCalculatorImpl implements CompoundInterestCalculator
  
   @Override
   public boolean validateInput(InitialInvestmentDto initialInvestment) {
-  
     
-    return false;
+    this.setDefaults(initialInvestment);
+    boolean cumple = true;
+    
+    
+    cumple = cumple && (initialInvestment.getInitialinvestment()>=1000);
+    cumple = cumple && (initialInvestment.getYearlyInput()>=0.0); 
+    cumple = cumple && (initialInvestment.getYearlyInputIncrement()>=0 );
+    cumple = cumple && (initialInvestment.getInvestmentYears()>0.0);
+    cumple = cumple && (initialInvestment.getInvestmentYield()>0.0);
+    
+    
+    return cumple;
+  }
+  
+  public void setDefaults(InitialInvestmentDto initialInvestment) {
+    Double yearlyInput = initialInvestment.getYearlyInput();
+    yearlyInput= yearlyInput==null?0.0:yearlyInput;
+    initialInvestment.setInitialinvestment(yearlyInput);
+    
+    Integer yearlyInputIncrement = initialInvestment.getYearlyInputIncrement();
+    yearlyInputIncrement = yearlyInputIncrement==null?0:yearlyInputIncrement;
+    initialInvestment.setYearlyInputIncrement(yearlyInputIncrement);
+    
   }
   
   
