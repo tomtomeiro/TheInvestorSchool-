@@ -10,8 +10,9 @@
 *
 * Nombre de archivo: ApplicationController.java
 * Autor: tflores
-* Fecha de creación: 8 sep. 2021
+* Fecha de creación: 9 sep. 2021
 */
+
 package application.controller;
 
 
@@ -28,17 +29,28 @@ public class ApplicationController {
   /** The calculator. */
   private CompoundInterestCalculator calculator;
 
+  /**
+   * Instantiates a new application controller.
+   *
+   * @param calculator the calculator
+   */
   public ApplicationController(CompoundInterestCalculator calculator) {
-    this.calculator=calculator;
+    this.calculator = calculator;
   }
-  
-  public List<InvestmentYieldDto> createTableYield(InitialInvestmentDto initialInvestment){
-  if(calculator.validateInput(initialInvestment)){
-    return calculator.createRevenueGrid(initialInvestment);
+
+  /**
+   * Creates the table yield.
+   *
+   * @param initialInvestment the initial investment
+   * @return the list
+   */
+  public List<InvestmentYieldDto> createTableYield(InitialInvestmentDto initialInvestment) {
+    if (calculator.validateInput(initialInvestment)) {
+      return calculator.createRevenueGrid(initialInvestment);
+    }
+    throw new RuntimeException("El calculo no puede se ejecutado");
+
   }
-  throw new RuntimeException("El calculo no puede se ejecutado");
-    
-  }
-  
+
 
 }
