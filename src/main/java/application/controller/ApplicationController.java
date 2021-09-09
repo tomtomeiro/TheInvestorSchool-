@@ -14,7 +14,9 @@
 */
 package application.controller;
 
-import java.util.ArrayList;
+
+import java.util.List;
+import application.dto.InitialInvestmentDto;
 import application.dto.InvestmentYieldDto;
 import application.service.CompoundInterestCalculator;
 
@@ -26,27 +28,17 @@ public class ApplicationController {
   /** The calculator. */
   private CompoundInterestCalculator calculator;
 
-  /**
-   * The main method.
-   *
-   * @param args the arguments
-   */
-  public static void main(String[] args) {
-
-    ArrayList<InvestmentYieldDto> listUserInvesYiel = new ArrayList();
-    
-    InvestmentYieldDto userInvesYiel1 = new InvestmentYieldDto();
-    
-    userInvesYiel1.setInvestmentYear(5);
-    userInvesYiel1.setInitialInvestment(5000.0);
-    userInvesYiel1.setYearlyInput(3000.0);
-    userInvesYiel1.setInvestmentYear(5);
-    userInvesYiel1.setFinalBalance(0);
-    
-        
-    
-
-
+  public ApplicationController(CompoundInterestCalculator calculator) {
+    this.calculator=calculator;
   }
+  
+  public List<InvestmentYieldDto> createTableYield(InitialInvestmentDto initialInvestment){
+  if(calculator.validateInput(initialInvestment)){
+    return calculator.createRevenueGrid(initialInvestment);
+  }
+  throw new RuntimeException("El calculo no puede se ejecutado");
+    
+  }
+  
 
 }

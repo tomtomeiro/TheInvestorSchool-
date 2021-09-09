@@ -34,29 +34,18 @@ public class CompoundInterstCalculatorImpl implements CompoundInterestCalculator
   private double finalBalence;
   
 
-  /**
-   * Creates the revenue grid.
-   *
-   * @param initialInvestment the initial investment
-   * @return the array list
-   */
   @Override
   public ArrayList<InvestmentYieldDto> createRevenueGrid(InitialInvestmentDto initialInvestment) {
-    ArrayList<InvestmentYieldDto> userInvestmentYiel = new ArrayList();
+   
     
     return null;
   }
 
-  /**
-   * Validate input.
-   *
-   * @param initialInvestment the initial investment
-   * @return true, if successful
-   */
+ 
   @Override
   public boolean validateInput(InitialInvestmentDto initialInvestment) {
-    InvestmentYieldDto userInvesYiel1 = new InvestmentYieldDto();
-    input= userInvesYiel1.getInitialInvestment()*(1+userInvesYiel1.getYearlyInput()/100);
+  
+    
     return false;
   }
   
