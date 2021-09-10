@@ -10,41 +10,24 @@
 *
 * Nombre de archivo: InitialInvestmentDto.java
 * Autor: tflores
-* Fecha de creación: 7 sep. 2021
+* Fecha de creación: 10 sep. 2021
 */
-package application.dto;
+package com.tis.mx.application.dto;
 
 import lombok.Getter;
 import lombok.Setter;
 
-/**
- * Gets the investment years.
- *
- * @return the investment years
- */
 @Getter
-
-/**
- * Sets the investment years.
- *
- * @param investmentYears the new investment years
- */
 @Setter
 public class InitialInvestmentDto {
-  
-  /** The initialinvestment. */
-  private double initialinvestment;
-  
-  /** The yearlyinput. */
-  private double yearlyinput;
+
+
+  private Double initialInvestment;
+  private Double yearlyInput;
   
   /** The yearly input increment. */
   private Integer yearlyInputIncrement;
-  
-  /** The investment yield. */
-  private float investmentYield;
-  
-  /** The investment years. */
+  private Float investmentYield;
   private Integer investmentYears;
 
 }
