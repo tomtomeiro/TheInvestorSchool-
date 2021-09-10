@@ -10,14 +10,17 @@
 *
 * Nombre de archivo: InvestmentYieldDto.java
 * Autor: tflores
-* Fecha de creación: 7 sep. 2021
+* Fecha de creación: 9 sep. 2021
 */
+
 
 package application.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+
 
 /**
  * Gets the final balance.
@@ -32,8 +35,20 @@ import lombok.Setter;
  * @param finalBalance the new final balance
  */
 @Setter
+
+/**
+ * Instantiates a new investment yield dto.
+ *
+ * @param investmentYear the investment year
+ * @param initialInvestment the initial investment
+ * @param yearlyInput the yearly input
+ * @param investmentYield the investment yield
+ * @param finalBalance the final balance
+ */
 @AllArgsConstructor
+@NoArgsConstructor
 public class InvestmentYieldDto {
+
 
   /** The investment year. */
   private int investmentYear;
@@ -50,13 +65,6 @@ public class InvestmentYieldDto {
   /** The final balance. */
   private double finalBalance;
 
-  @Override
-  public String toString() {
-    return "InvestmentYieldDto [investmentYear=" + investmentYear + ", initialInvestment="
-        + initialInvestment + ", yearlyInput=" + yearlyInput + ", investmentYield="
-        + investmentYield + ", finalBalance=" + finalBalance + "]";
-  }
 
-  
 
 }

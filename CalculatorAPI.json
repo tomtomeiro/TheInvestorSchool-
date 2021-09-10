@@ -1,0 +1,31 @@
+//DISEÑO DE API y datos informativos(Estructura del servicio)
+{
+    "openapi":"3.0.1", /*: para especificar el valor*/
+    "info":{  //Propiedad de informacion 
+        "title":"Calculadora de interes compuesto",
+        "description":"Practica de interes compuesto",
+        "termsOfService": "http://swagger.io/terms/",
+        "contact":{
+            "email":"tom@gmail.com"
+        },
+        "license":{
+            "name":"Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENCESE-2.0.html"
+        },
+        "version":"1.0.0" /*Version de la API ACUALIZACION, BUTH*/
+    },
+    "paths":{      /*paths rutas de recursos con propiedade*/ /*Como haceder al recurso : api, version1, sustantivos no verbos y no mayor a tres*/
+     "/api/v1/investors/calculators/ci":{   /*Especificar nuestra api con el, metodo para crear un rendiiento: POST (pero tambien puede tener metodos como el get, delete, put)*/ 
+        "post": {
+            "tags":["CI-Simulator", "INVESTMENTS", "SIMULEITORS"] /*tags son los identificadores Simullaitor, investemnet estos tags(etiquetas) sirven como para crear nuestras applicaion */
+
+        }
+
+     }
+        
+
+     }   
+    }   
+}
+/*Todas las propiedades en inglés 
+*/

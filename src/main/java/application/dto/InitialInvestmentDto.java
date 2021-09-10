@@ -33,33 +33,20 @@ import lombok.Setter;
 public class InitialInvestmentDto {
   
   /** The initialinvestment. */
-  private double initialinvestment;
+  private Double initialInvestment;
   
   /** The yearlyinput. */
-  private double yearlyInput;
+  private Double yearlyInput;
   
   /** The yearly input increment. */
   private Integer yearlyInputIncrement;
   
   /** The investment yield. */
-  private float investmentYield;
+  private Float investmentYield;
   
   /** The investment years. */
   private Integer investmentYears;
 
-  /**
-   * To string.
-   *
-   * @return the string
-   */
-  @Override
-  public String toString() {
-    return "InitialInvestmentDto [initialinvestment=" + initialinvestment + ", yearlyinput="
-        + yearlyInput + ", yearlyInputIncrement=" + yearlyInputIncrement + ", investmentYield="
-        + investmentYield + ", investmentYears=" + investmentYears + "]";
-  }
-  
-  
   
 
 }

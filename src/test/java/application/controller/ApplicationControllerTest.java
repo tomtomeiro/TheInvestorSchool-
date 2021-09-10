@@ -14,8 +14,10 @@
 */
 package application.controller;
 
-import static org.junit.Assert.assertEquals;
 
+
+
+import static org.junit.Assert.assertEquals;
 
 import application.dto.InitialInvestmentDto;
 import application.dto.InvestmentYieldDto;
@@ -42,11 +44,11 @@ public class ApplicationControllerTest {
     // creando los valores iniciales de la inversion
     this.initialInvestment = new InitialInvestmentDto();
 
-    this.initialInvestment.setInitialinvestment(Double.valueOf(5000.0));
-    this.initialInvestment.setYearlyInput(Double.valueOf(3000.0));
-    this.initialInvestment.setYearlyInputIncrement(Integer.valueOf(1));
+    this.initialInvestment.setInitialInvestment(Double.valueOf(5000.00));
+    this.initialInvestment.setYearlyInput(Double.valueOf(3000.00));
+    this.initialInvestment.setYearlyInputIncrement(1);
     this.initialInvestment.setInvestmentYears(5);
-    this.initialInvestment.setInvestmentYield(Float.valueOf(21));
+    this.initialInvestment.setInvestmentYield(21f);
 
   }
 
@@ -63,7 +65,7 @@ public class ApplicationControllerTest {
     assertEquals(3000.00, firstYear.getYearlyInput());
     assertEquals(1680.00, firstYear.getInvestmentYear());
     assertEquals(9680.00, firstYear.getFinalBalance());
-    
+   
     
   }  
 
