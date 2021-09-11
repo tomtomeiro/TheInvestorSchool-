@@ -12,6 +12,7 @@
 * Autor: tflores
 * Fecha de creación: 10 sep. 2021
 */
+
 package com.tis.mx.application.service;
 
 import java.util.List;
@@ -23,6 +24,7 @@ import com.tis.mx.application.dto.InvestmentYieldDto;
  */
 public interface CompoundInterestCalculator {
 
+
   /**
    * Creates the revenue grid.
    *
@@ -30,7 +32,6 @@ public interface CompoundInterestCalculator {
    * @return the list
    */
   List<InvestmentYieldDto> createRevenueGrid(InitialInvestmentDto initialInvestment);
-
 
   /**
    * Validate input.
