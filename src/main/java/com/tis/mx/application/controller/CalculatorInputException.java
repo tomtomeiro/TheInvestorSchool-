@@ -27,6 +27,6 @@ public class CalculatorInputException extends RuntimeException {
    * @param message the message
    */
   public CalculatorInputException(String message) {
-    super(message);
+     super(message);
   }
 }
