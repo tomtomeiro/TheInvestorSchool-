@@ -12,12 +12,14 @@
 * Autor: tflores
 * Fecha de creación: 10 sep. 2021
 */
+
 package com.tis.mx.application.controller;
 
 import java.util.List;
 import com.tis.mx.application.dto.InitialInvestmentDto;
 import com.tis.mx.application.dto.InvestmentYieldDto;
 import com.tis.mx.application.service.CompoundInterestCalculator;
+
 
 /**
  * The Class ApplicationController.
@@ -26,6 +28,7 @@ public class ApplicationController {
 
   /** The calculator. */
   private CompoundInterestCalculator calculator;
+
 
   /**
    * Instantiates a new application controller.

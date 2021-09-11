@@ -12,6 +12,7 @@
 * Autor: tflores
 * Fecha de creación: 10 sep. 2021
 */
+
 package com.tis.mx.application.controller;
 
 
@@ -31,9 +32,7 @@ public class ApplicationControllerTest {
   private InitialInvestmentDto initialInvestment;
   private CompoundInterestCalculator calculator;
 
-  /**
-   * Creates the values before to test.
-   */
+
   @Before
   public void createValuesBeforeToTest() {
     // Crear una calculadora
@@ -50,6 +49,9 @@ public class ApplicationControllerTest {
     this.initialInvestment.setInvestmentYield(21f);
   }
 
+  /**
+   * Should generate table yield.
+   */
   @Test
   public void shouldGenerateTableYield() {
 

@@ -12,12 +12,14 @@
 * Autor: tflores
 * Fecha de creación: 10 sep. 2021
 */
+
 package com.tis.mx.application.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
 
 
 /**
@@ -27,12 +29,14 @@ import lombok.Setter;
  */
 @Getter
 
+
 /**
  * Sets the final balance.
  *
  * @param finalBalance the new final balance
  */
 @Setter
+
 
 /**
  * Instantiates a new investment yield dto.
@@ -45,6 +49,7 @@ import lombok.Setter;
  */
 @AllArgsConstructor
 
+
 /**
  * Instantiates a new investment yield dto.
  */
@@ -54,16 +59,20 @@ public class InvestmentYieldDto {
 
   /** The investment year. */
   private int investmentYear;
-  
+
+
   /** The initial investment. */
   private Double initialInvestment;
-  
+
+
   /** The yearly input. */
   private Double yearlyInput;
-  
+
+
   /** The investment yield. */
   private Double investmentYield;
-  
+
+
   /** The final balance. */
   private Double finalBalance;
 

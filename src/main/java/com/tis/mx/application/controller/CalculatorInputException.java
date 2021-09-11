@@ -12,14 +12,14 @@
 * Autor: tflores
 * Fecha de creación: 10 sep. 2021
 */
+
 package com.tis.mx.application.controller;
 
 public class CalculatorInputException extends RuntimeException {
 
-  /**
-   * serialVersionUID
-   */
+
   private static final long serialVersionUID = -6506558049330575989L;
+
 
   /**
    * Instantiates a new calculator input exception.

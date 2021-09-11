@@ -12,6 +12,7 @@
 * Autor: tflores
 * Fecha de creación: 10 sep. 2021
 */
+
 package com.tis.mx.application.service.impl;
 
 import java.util.ArrayList;
@@ -26,6 +27,7 @@ import com.tis.mx.application.service.CompoundInterestCalculator;
 
 
 public class CompoundInterestCalculatorImpl implements CompoundInterestCalculator {
+
 
   /**
    * Creates the revenue grid.
