@@ -8,45 +8,47 @@
 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU 
 * General Public License for more details.
 *
-* Nombre de archivo: InvestmentYieldDto.java
+* Nombre de archivo: InitialInvestmentDto.java
 * Autor: tflores
-* Fecha de creación: 7 sep. 2021
+* Fecha de creación: 10 sep. 2021
 */
-
-package application.dto;
+package com.tis.mx.application.dto;
 
 import lombok.Getter;
 import lombok.Setter;
 
 /**
- * Gets the final balance.
+ * Gets the investment years.
  *
- * @return the final balance
+ * @return the investment years
  */
 @Getter
 
 /**
- * Sets the final balance.
+ * Sets the investment years.
  *
- * @param finalBalance the new final balance
+ * @param investmentYears the new investment years
  */
 @Setter
-public class InvestmentYieldDto {
+public class InitialInvestmentDto {
 
-  /** The investment year. */
-  private Integer investmentYear;
-  
+
+
   /** The initial investment. */
-  private double initialInvestment;
-  
+  private Double initialInvestment;
+
   /** The yearly input. */
-  private double yearlyInput;
-  
+  private Double yearlyInput;
+
+  /** The yearly input increment. */
+  private Integer yearlyInputIncrement;
+
   /** The investment yield. */
-  private double investmentYield;
-  
-  /** The final balance. */
-  private double finalBalance;
+  private Float investmentYield;
+
+  /** The investment years. */
+  private Integer investmentYears;
+
 
 
 }
