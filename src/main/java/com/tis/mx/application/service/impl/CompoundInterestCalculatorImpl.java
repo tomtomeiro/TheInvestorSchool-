@@ -20,12 +20,13 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import org.springframework.stereotype.Service;
 import com.tis.mx.application.dto.InitialInvestmentDto;
 import com.tis.mx.application.dto.InvestmentYieldDto;
 import com.tis.mx.application.service.CompoundInterestCalculator;
 
 
-
+@Service /*Esteriotipo service es un component especial y como interactia sevicio */
 public class CompoundInterestCalculatorImpl implements CompoundInterestCalculator {
 
 
